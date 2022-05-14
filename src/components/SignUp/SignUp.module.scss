@@ -1,0 +1,29 @@
+.box {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border: black 1px;
+  border-radius: 30px;
+
+  .title {
+    margin-bottom: 80px;
+    margin-top: 50px;
+  }
+
+  .signupText {
+    margin-bottom: 20px;
+  }
+
+  .errorText {
+    color: crimson;
+  }
+
+  .form {
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
