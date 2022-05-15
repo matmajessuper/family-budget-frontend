@@ -1,0 +1,15 @@
+.Bar {
+  width: 50vw !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .Button {
+    color: #ffffff;
+  }
+}

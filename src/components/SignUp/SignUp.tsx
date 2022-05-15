@@ -15,7 +15,7 @@ const SignUp = () => {
     const onSubmit = (data: SignUpForm) => {
         AuthService.signup(data)
             .then((response) => {
-                const accessToken = response.data.auth_token;
+                const accessToken = response.data.accessToken;
                 localStorage.setItem('token', accessToken);
                 navigate('/');
             })

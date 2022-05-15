@@ -13,7 +13,7 @@ const http = axios.create({
 http.interceptors.request.use(
     (config) => {
         const token = tokenGetter();
-        if (token) {
+        if (token && token !== undefined) {
             config!.headers!.Authorization = `Bearer ${token}`;
         }
         return config;

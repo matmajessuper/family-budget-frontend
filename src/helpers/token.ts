@@ -1,7 +1,6 @@
 import jwt_decode from 'jwt-decode';
 
 type Token = {
-    username: string;
     exp: number;
 };
 
@@ -13,7 +12,6 @@ export const isAuthenticated = (exp: number): boolean => {
 export const decodeToken = (token: string): Token => {
     const decoded = jwt_decode(token) as any;
     return {
-        username: decoded.username,
         exp: decoded.exp,
     };
 };

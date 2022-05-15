@@ -15,7 +15,7 @@ const Login = () => {
     const onSubmit = (data: LoginForm) => {
         AuthService.login(data)
             .then((response) => {
-                const accessToken = response.data.auth_token;
+                const accessToken = response.data.accessToken;
                 localStorage.setItem('token', accessToken);
                 navigate('/');
             })
